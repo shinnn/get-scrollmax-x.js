@@ -22,10 +22,6 @@ if (typeof window.scrollMaxX === 'number') {
 } else {
   var body = document.body, html = document.documentElement;
 
-  var getInnerWidth;
-
-  getInnerWidth = function()  {return html.clientWidth || body.clientWidth};
-
   var getScrollWidth = function()  {
     return body.offsetWidth ||
            html.clientWidth ||
@@ -33,7 +29,9 @@ if (typeof window.scrollMaxX === 'number') {
            html.scrollWidth;
   };
   
-  getScrollMaxX = function()  {return Math.max(getScrollWidth() - getInnerWidth(), 0)};
+  getScrollMaxX = function()  {
+    return Math.max(getScrollWidth() - (html.clientWidth || body.clientWidth), 0);
+  };
 }
 
 return getScrollMaxX;

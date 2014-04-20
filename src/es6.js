@@ -7,10 +7,6 @@ if (typeof window.scrollMaxX === 'number') {
 } else {
   let {body, documentElement: html} = document;
 
-  let getInnerWidth;
-
-  getInnerWidth = () => html.clientWidth || body.clientWidth;
-
   let getScrollWidth = () => {
     return body.offsetWidth ||
            html.clientWidth ||
@@ -18,5 +14,7 @@ if (typeof window.scrollMaxX === 'number') {
            html.scrollWidth;
   };
   
-  getScrollMaxX = () => Math.max(getScrollWidth() - getInnerWidth(), 0);
+  getScrollMaxX = () => {
+    return Math.max(getScrollWidth() - (html.clientWidth || body.clientWidth), 0);
+  };
 }
