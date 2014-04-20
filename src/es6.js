@@ -18,5 +18,5 @@ if (typeof window.scrollMaxX === 'number') {
            html.scrollWidth;
   };
   
-  getScrollMaxX = () => getScrollWidth() - getInnerWidth();
+  getScrollMaxX = () => Math.max(getScrollWidth() - getInnerWidth(), 0);
 }

@@ -3,7 +3,7 @@ var getScrollMaxX = require('./dist/get-scrollmax-x.js');
 
 var body = document.body;
 body.style.margin = '0';
-body.style.padding = '0';
+body.style.padding = '0 1px 1px 0';
 body.style.width = '0';
 
 test('window.scrollMaxX', function(t) {
