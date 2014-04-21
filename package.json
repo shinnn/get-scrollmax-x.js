@@ -4,7 +4,8 @@
   "description": "Get the value equivalent to window.scrollMaxX",
   "main": "dist/get-scrollmax-x.js",
   "scripts": {
-    "test": "gulp build"
+    "build": "gulp build",
+    "test": "npm run-script build && testling"
   },
   "author": {
     "name": "Shinnosuke Watanabe",
@@ -31,6 +32,7 @@
     "width",
     "scroll",
     "horizontal",
+    "cross-browser",
     "client-side",
     "browser"
   ],
