@@ -22,7 +22,7 @@ bower i --save get-scrollmax-x
 #### [Component](http://component.io/)
 
 ```
-component install shinnn/get-scrollmax-x
+component install shinnn/get-scrollmax-x.js
 ```
 
 #### [npm](https://www.npmjs.org/) (Use with [Browserify](http://browserify.org/) etc.)

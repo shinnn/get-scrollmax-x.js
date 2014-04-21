@@ -1,5 +1,5 @@
 {
-  "name": "get-scrollmax-x",
+  "name": "get-scrollmax-x.js",
   "version": "0.1.0",
   "description": "Get the value equivalent to window.scrollMaxX",
   "keywords": [
