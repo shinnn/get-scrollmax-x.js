@@ -18,14 +18,15 @@ test('window.scrollMaxX', function(t) {
   );
 
   body.style.width = '9999px';
-  var _s = getScrollMaxX();
+  var currentMaxX = getScrollMaxX();
   
   t.ok(
-    _s > 0,
+    currentMaxX > 0,
     'should return positive number when the content is enough large.'
   );
   
-  body.style.width = parseInt(body.style.width, 10) + 1 + - _s + 'px';
+  body.style.width = parseInt(body.style.width, 10) + 1 - currentMaxX + 'px';
+
   t.equal(
     getScrollMaxX(),
     1,
