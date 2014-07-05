@@ -1,6 +1,6 @@
 {
   "name": "get-scrollmax-x",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Get the value equivalent to window.scrollMaxX",
   "main": "dist/get-scrollmax-x-cjs.js",
   "scripts": {
