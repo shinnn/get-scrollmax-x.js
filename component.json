@@ -11,9 +11,9 @@
     "cross-browser"
   ],
   "repo": "shinnn/get-scrollmax-x.js",
-  "main": "dist/get-scrollmax-x.js",
+  "main": "dist/get-scrollmax-x-cjs.js",
   "scripts": [
-    "dist/get-scrollmax-x.js"
+    "dist/get-scrollmax-x-cjs.js"
   ],
   "license": "MIT"
 }

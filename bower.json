@@ -27,9 +27,10 @@
   "ignore": [
     "**/.*",
     "node_modules",
+    "dist/get-scrollmax-x-cjs.js",
+    "gulpfile.js",
     "src",
     "test.js",
-    "gulpfile.js",
     "package.json",
     "component.json"
   ]

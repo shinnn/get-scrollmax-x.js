@@ -2,7 +2,7 @@
   "name": "get-scrollmax-x",
   "version": "0.1.1",
   "description": "Get the value equivalent to window.scrollMaxX",
-  "main": "dist/get-scrollmax-x.js",
+  "main": "dist/get-scrollmax-x-cjs.js",
   "scripts": {
     "build": "gulp build",
     "test": "npm run-script build && testling"
@@ -37,18 +37,21 @@
     "browser"
   ],
   "devDependencies": {
-    "browserify": "^4.1.10",
-    "gulp": "^3.8.0",
-    "gulp-es6-transpiler": "^0.1.3",
+    "browserify": "^4.2.0",
+    "gulp": "^3.8.5",
+    "gulp-es6-transpiler": "^0.1.4",
+    "gulp-footer": "^1.0.4",
     "gulp-header": "^1.0.2",
-    "gulp-jshint": "^1.6.2",
+    "gulp-jshint": "^1.6.4",
     "gulp-jsonlint": "0.0.3",
-    "gulp-load-plugins": "^0.5.1",
+    "gulp-load-plugins": "^0.5.3",
     "gulp-rename": "^1.2.0",
     "gulp-wrap-umd": "^0.2.0",
     "jshint-stylish": "^0.2.0",
+    "merge-stream": "^0.1.2",
+    "rimraf": "^2.2.8",
     "tape": "^2.13.3",
-    "testling": "^1.6.1"
+    "testling": "^1.7.0"
   },
   "testling": {
     "files": "test.js",
