@@ -28,7 +28,7 @@ if (typeof window.scrollMaxX === 'number') {
            body.scrollWidth ||
            html.scrollWidth;
   };
-  
+
   getScrollMaxX = function()  {
     return Math.max(getScrollWidth() - (html.clientWidth || body.clientWidth), 0);
   };
