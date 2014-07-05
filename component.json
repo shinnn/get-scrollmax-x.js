@@ -1,11 +1,12 @@
 {
   "name": "get-scrollmax-x.js",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Get the value equivalent to window.scrollMaxX",
   "keywords": [
     "window",
     "size",
     "width",
+    "max",
     "scroll",
     "horizontal",
     "cross-browser"
